@@ -1,0 +1,17 @@
+[package]
+name = "image-gameboy"
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.66"
+description = "Convert images to Game Boy-compatible 2bpp format"
+readme = "readme.md"
+repository = "https://github.com/LinusU/image-gameboy"
+license = "MIT OR Apache-2.0"
+keywords = ["gameboy", "2bpp", "tileset", "image", "gamedev"]
+categories = ["encoding", "game-development", "graphics", "multimedia::encoding", "multimedia::images"]
+
+[dependencies]
+image = { version = "0.25.6", default-features = false }
+
+[dev-dependencies]
+image = { version = "0.25.6", default-features = false, features = ["png"] }
